@@ -1,0 +1,1 @@
+predictors = ["venue_code", "opp_code", "hour", "day_code"]
