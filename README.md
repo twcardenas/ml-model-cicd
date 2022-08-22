@@ -21,8 +21,8 @@ Additional components will be a model registry. That way we can keep track of ou
 # Todo
 
 - Make diagram of flow
-- Set Up MLFlow
 - Unit tests
+- import parameterization of ML Flow Variables
 
 # Model Inputs & Outputs
 
@@ -44,7 +44,7 @@ Output: 0 or 1
 1. preprocess.py
    Load data sources, format, transform. Then save new dataset
 
-2. split_dataset.py
+2. split.py
    Split the processed dataset into two, one to fit the model and one to test the model.
    We will train on previous seasons and predict on the current / latest season
 
