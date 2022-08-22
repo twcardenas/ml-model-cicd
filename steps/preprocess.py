@@ -1,5 +1,5 @@
 import pandas as pd
-matches = pd.read_csv("matches.csv", index_col=0)
+matches = pd.read_csv("./datasourcs/matches.csv", index_col=0)
 
 # Data Pre-Processing
 matches[matches["team"] == "Liverpool"].sort_values("date")
@@ -14,4 +14,4 @@ matches["hour"] = matches["time"].str.replace(":.+", "", regex=True).astype("int
 
 matches["day_code"] = matches["date"].dt.dayofweek
 
-matches.to_csv("./processed_data.csv")
+matches.to_csv("./output/processed_data.csv")
